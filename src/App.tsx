@@ -28,7 +28,7 @@ function App() {
           </div>
         </div>
         <div>
-          <p>Enter time in ss:ss:ss</p>
+          <p>Enter time in hh:mm:ss</p>
           <div>
             <input
               name="time"
