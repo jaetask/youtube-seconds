@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [link, setLink] = useState("https://www.youtube.com/watch?v=gyMwXuJrbJQ");
+  const [link, setLink] = useState("");
   const [time, setTime] = useState("");
 
   let [hours = 0, minutes = 0, seconds = 0] = time.split(":");
@@ -23,6 +23,7 @@ function App() {
               onChange={(e) => {
                 setLink(e.target.value);
               }}
+              placeholder="https://www.youtube.com/watch?v="
             />
           </div>
         </div>
