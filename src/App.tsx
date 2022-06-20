@@ -8,7 +8,7 @@ function App() {
   let [hours = 0, minutes = 0, seconds = 0] = time.split(":");
 
   const totalSeconds = Number(hours) * 60 * 60 + Number(minutes) * 60 + Number(seconds);
-  const url = `${link}&t=${totalSeconds}s`;
+  const url = link ? `${link}&t=${totalSeconds}s` : "";
 
   return (
     <div className="App">
